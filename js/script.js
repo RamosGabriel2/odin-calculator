@@ -62,9 +62,14 @@ let calculator = () => {
                 break;
 
             default:
-                result = num1 / num2;
-                resultBool = true;
-                break;
+                if(num2 == 0){
+                    showResult.textContent = "bruh"
+                    break;
+                }else{
+                    result = num1 / num2;
+                    resultBool = true;
+                    break;
+                }
         }
     }
 
